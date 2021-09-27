@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo of Some Useful HTML tags</title>
+</head>
+<body>
+    <header id="page_header">
+        <h1>Demo of Some Useful HTML tags</h1>
+        <p>The page displays the usage some of the more commonly used html tags that you will find useful.</p>
+    </header>
+
+    <main id="page_main">
+        This is the main content of this web page. It should consist of descriptions which conveys the primary content of the page. 
+    </main>
+
+    <hr>
+    <section id="block_tags">
+        <h2>Blockquote demo</h2>
+        <p>Blockquote adds a quote, as shown below</p>
+        <blockquote cite="https://www.brainyquote.com/authors/franklin-d-roosevelt-quotes">
+            "The only limit to our realization of tomorrow will be our doubts of today". - FDR
+            
+        </blockquote>
+    </section>
+    <hr>
+    <section>
+        <h2>Demo of using the details tag with summary tag</h2>
+        <p>details element with the summary element is used to create a drop down effect to show contents.</p>
+        <details>
+            Man U 1:0 Man City 
+            <summary>
+                Match results: Want to learn about the match results? Click on Match results. Warning, spoiler alert.
+            </summary>
+        </details>
+    </section>
+
+
+    <hr>
+    <section id="inline_tags">
+        <h2>Examples for some Inline tags</h2>
+        <p>Inline tags unlike Block tags do not put a newline before and after the content. It continues on the same line</p>
+
+        <h3>Cite a resource using the cite tag</h3>
+        <p>cite tags makes it easier for users and bots to search code for reference based information.</p>
+        <p>For example, the documentation of nodejs can be found on <cite>https://nodejs.org/en/</cite></p>
+        
+        <h3>Specify abbreviations using the abbr tag</h3>
+        <p>you can define abbreviations using the abbr tag. It shows the full form when you hover your mouse over the abbreviation.</p>
+        <p>days of the week are: <abbr title="Monday">MON</abbr>, <abbr title="Tuesday">TUES</abbr>, and so on</p>
+
+        <h3>Specify time using the time tag.</h3>
+        <p>If your content specifies time, then semantically use the time tag.</p>
+        <p>The Fall 2021 semester starts from <time datetime="2021-09-02">SEP 02</time></p>
+
+        <h3>Display code fragments using the code element</h3>
+        <p>In <code>C++</code> programming language, This is how you output Hello, World</p>
+        <p>
+            <code>
+                include&lt;iostream&gt; <br>
+                int main() <br>
+                {<br>
+                    cout &lt;&lt; "Hello, World"; <br>
+                    return 0; <br>
+                } 
+            </code>
+         </p>
+
+         <h3>Usage of subscript and superscript tags</h3>
+         <p>(a + b)<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> + 2a*b </p>
+         <p>Water is represented as H<sub>2</sub>O </p>
+    </section>
+
+
+    <section id="js_html_tags">
+        <h2>Demo of some HTML tags that need JavaScript to be functional</h2>
+        <p>These elements below, right now will not do anything functionally.</p>
+
+        <h3>The button element</h3>
+        <p>Below are examples of some html buttons</p>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+        <h3>The meter tag</h3>
+        <p>meter tag works with many attributes and can be visually very appealing. With JavaScript and real time data you can achieve a lot. </p>
+        <p>Right now, the meters below are hardcoded to give you all an idea of what could be.</p>
+
+        <!-- Label tag creates a label for your meter. Always use label with meter-->
+        <label for="disk_c">Disk usage C:</label>
+        <!-- specify meter with value, min and max-->
+        <meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+        
+        <label for="disk_d">Disk usage D:</label>
+        <!-- Specify meter as a percentage -->
+        <meter id="disk_d" value="0.6">60%</meter> 
+
+        <h3>The progress tag</h3>
+        <p>Useful in showing progress bars.</p>
+        <label for="survey">Survey Progress</label>
+        <progress id="survey" max="15" value="10"> 66% </progress>
+
+        <h3>the iframe tag</h3>
+        <p>Used to nest content. Say you want to show OU web page in this web page</p>
+        <iframe src="https://www.oakland.edu" title="Oakland University" frameborder="5" width="50%"> OU </iframe>
+
+        <h3>The bdo tag - bidirectional orientation tag</h3>
+        <p>Think of languages. What if you are creating a website for global reach with multiple language support. Some languages are left to right, some are right to left</p>
+        <bdo dir="ltr">This language is left to right orientation</bdo> <br>
+        <bdo dir="rtl">This language is right to left orientation</bdo>
+
+
+
+    </section>
+
+    <hr>
+    <footer id="page_footer">
+        <p>Contact us at the address below.</p>
+        <address>
+            115, Library Drive, Enginnering Center, <br>
+            Oakland University, Rochester Michigan.
+        </address>
+    </footer>
+    
+</body>
+</html>

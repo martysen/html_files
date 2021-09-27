@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo HTML Audio-Video</title>
+</head>
+<body>
+    <header id="nav_bar">
+        <h1>Demo on HTML audio and video elements</h1>
+        <nav>
+            <menu>
+                <li><a href="#audio_files">Audio Files</a></li>
+                <li><a href="#video_files">Video Files</a></li>
+            </menu>
+ 
+        </nav>
+    </header>
+
+    <div id="video_files" class="video_files">
+        <h2>Embedding Video files</h2>
+        <p>When embedding videos you have option to include different file extensions such as .AVI, .MOV, .MP4, .OGG, .WMV, .WEBM</p>
+        <p>Below is a sample .MOV video using html video elements without any attribute.</p>
+        <video src="./videos/file_example_MOV_1920_2_2MB.mov">A sample video displayed using the video tag in html5.</video>
+
+        <br>
+        <p>Below is a sample video using html video elements with sizing attributes. </p>
+        <video src="./videos/file_example_MOV_1920_2_2MB.mov" width="50%">A sample video displayed using the video tag in html5. Your Browser does not support it.</video>
+
+        <br>
+        <p>Below is a sample video using html video elements with sizing and autoplay attributes. </p>
+        <video src="./videos/file_example_MOV_1920_2_2MB.mov" width="40%" autoplay>A sample video displayed using the video tag in html5.  Your Browser does not support it.</video>
+        
+        <br>
+        <p>Below is a sample video using html video elements with sizing, loop, and autoplay attributes. </p>
+        <video src="./videos/file_example_MOV_1920_2_2MB.mov" width="25%" loop autoplay>A sample video displayed using the video tag in html5. Your Browser does not support it.</video>
+
+        <br>
+        <p>Below is a sample video using html video elements with sizing loop, controls and autoplay attributes. </p>
+        <video src="./videos/file_example_MOV_1920_2_2MB.mov" width="15%" loop autoplay controls>A sample video displayed using the video tag in html5.  Your Browser does not support it.</video>
+
+        <br>
+        <p>Below is a sample video using html video elements its attributes and source tag instead of src. </p>
+        <video src="./videos/file_example_MOV_1920_2_2MB.mov" width="20%" loop autoplay controls>A sample video displayed using the video tag in html5.  Your Browser does not support it.
+        </video>
+
+    </div>
+
+    <div id="audio_files" class="audio_files">
+        <h2>Embedding Audio files</h2>
+        <p>When embedding audio files you have the option to include two main file types - .MP3, .WAV. You can also use .OGG</p>
+        <p>Below is a sample .MP3 file embedded in the web page with all essential attributes.</p>
+        <audio src="./audio/file_example_MP3_2MG.mp3"  autoplay loop controls>This is a sample MP3 audio file embed in the page.  Your Browser does not support it.</audio>
+
+        <br>
+        <p>Below is a sample .MP3 file embedded in the web page but starting from a specific timestamp without autoplay.</p>
+        <audio src="./audio/file_example_MP3_2MG.mp3#t=00:30" controls>This is a sample MP3 audio file embed in the page.  Your Browser does not support it.</audio>
+    </div>
+    
+    <br>
+    <a href="#nav_bar"><button type="button">Go to Top</button></a>
+    
+</body>
+</html>
